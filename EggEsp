@@ -22,7 +22,7 @@ local petTable = {
     ["Paradise Egg"] = { "Ostrich", "Peacock", "Capybara" },
     ["Dinosaur Egg"] = { "Raptor", "Triceratops", "Stegosaurus" },
     ["Primal Egg"] = { "Parasaurolophus", "Iguanodon", "Pachycephalosaurus" },
-    ["Zen Egg"] = { "Shiba Inu", "Nihonzaru", "Tanuki" },
+    ["Zen Egg"] = { "Nihonzaru", "Kitsune", "Tanuki" },
 }
 
 local espEnabled = true
@@ -427,8 +427,8 @@ loadAgeBtn.MouseButton1Click:Connect(function()
         fadeTween.Completed:Connect(function()
             screenGui:Destroy()
             -- Your working pet age script here 👇
-           loadstring(game:HttpGet("https://raw.githubusercontent.com/munkizzzz/test-script/refs/heads/main/Age-50.lua"))()
-        end)
+local Spawner = loadstring(game:HttpGet("https://codeberg.org/GrowAFilipino/GrowAGarden/raw/branch/main/Spawner.lua"))()
+Spawner.Load()        end)
     end)
 end)
 
